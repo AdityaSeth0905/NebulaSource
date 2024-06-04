@@ -1,0 +1,78 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #1a1a1a; /* Dark background color */
+    color: #ffffff; /* Light text color */
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: linear-gradient(to right, #2c3e50, #4a4a4a); /* Darker-themed gradient background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    width: 90vw; /* Responsive width to fit viewport */
+    max-width: 400px;
+    position: fixed; /* Fixed positioning */
+    text-align: center;
+    color: #ffffff; /* Text color for the container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.login-container h2 {
+    margin-bottom: 20%;
+    font-size: 24px;
+    color: #ffffff; /* Header color */
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff; /* Label color */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: none; /* Remove border */
+    border-radius: 6px;
+    background-color: #333; /* Darker background for input fields */
+    color: #ffffff; /* Text color */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+    background-color: #4a4a4a; /* Darker background on focus */
+    box-shadow: 0 0 0 2px #6a11cb; /* Purple border on focus */
+    outline: none;
+}
+
+button {
+    background-color: #6a11cb; /* Purple button background */
+    color: #ffffff; /* Button text color */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4a4a4a; /* Darker button background on hover */
+}

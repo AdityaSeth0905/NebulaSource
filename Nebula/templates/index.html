@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Nebula/css/indexpage.css' %}"> 
+    <title>NebulaSource</title>
+</head>
+<body>
+    <div id="main">
+        <hr>
+        <div id="heading">
+            <h1>NebulaSource</h1>
+        </div>
+        <hr>
+    </div>
+
+    <div class="login-container" id="login-container">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+    <script>
+        window.onload = function() {
+            // Listen for any click event on the document
+            document.addEventListener('click', function() {
+                // Hide the heading if it exists
+                var heading = document.getElementById("heading");
+                if (heading) {
+                    heading.style.display = "none";
+                }
+                // Show the login container
+                document.getElementById("login-container").style.display = "block";
+            });
+        };
+    </script>
+    
+        
+</body>
+</html>

@@ -1,0 +1,34 @@
+body{
+    background-color: black;
+    color: powderblue;
+    text-decoration: none;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+nav {
+    display: flex; /* Use flexbox to center the nav */
+    justify-content: center; /* Center the nav horizontally */
+    background-color: #333; /* Background color of the navbar */
+}
+
+.navbar {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display list items inline using flexbox */
+}
+
+.navbar li {
+    margin: 0 10px; /* Optional: Add spacing between items */
+}
+
+.navbar li a {
+    display: block;
+    color: white; /* Text color */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; /* Remove underline from links */
+}
+
+.navbar li a:hover {
+    background-color: #111; /* Background color on hover */
+}
