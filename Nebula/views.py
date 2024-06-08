@@ -1,6 +1,9 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
 
+def admin(request):
+    return render(request, 'admin.py')
+
 def index(request):
     return render(request, 'index.html')
 
@@ -9,6 +12,12 @@ def home(request):
 
 def projects(request):
     return render(request, 'projects.html')
+
+def about(request):
+    return render(request, 'about.html')
+
+def services(request):
+    return render(request, 'services.html')
 
 def stylesheets(request):
     return render(request, 'indexpage.css')

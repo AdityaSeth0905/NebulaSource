@@ -69,6 +69,17 @@ TEMPLATES = [
     },
 ]
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'NebulaSourceDB',
+        'ENFORCE_SCHEMA': False,
+        'CLIENT': {
+            'host': 'mongodb+srv://adityaseth936:adityaseth0905@nebulasource.ueavgem.mongodb.net/NebulaSourceDB?retryWrites=true&w=majority'
+        }  
+    }
+}
+
 WSGI_APPLICATION = 'NebulaSource.wsgi.application'
 
 
@@ -81,8 +92,8 @@ WSGI_APPLICATION = 'NebulaSource.wsgi.application'
 #client = MongoClient('connection_string')
 #db = client['db_name']
 #}
-import os
-from pymongo import MongoClient
+#import os
+#from pymongo import MongoClient
 
 #MONGO_DB_NAME = 'NebulaSource'
 #MONGO_DB_USER = os.environ.get('adityaseth936')
@@ -95,14 +106,13 @@ from pymongo import MongoClient
 #import os
 #from pymongo import MongoClient
 
-MONGO_DB_USER = 'adityaseth936'
-MONGO_DB_PASSWORD = 'adityaseth0905'
-MONGO_DB_CLUSTER = 'nebulasource.ueavgem.mongodb.net'
-MONGO_DB_NAME = 'NebulaSourceDB'
-MONGO_DB_URI = f"mongodb+srv://{MONGO_DB_USER}:{MONGO_DB_PASSWORD}@{MONGO_DB_CLUSTER}/{MONGO_DB_NAME}?retryWrites=true&w=majority&appName=NebulaSource"
+#MONGO_DB_USER = 'adityaseth936'
+#MONGO_DB_PASSWORD = 'adityaseth0905'
+#MONGO_DB_CLUSTER = 'nebulasource.ueavgem.mongodb.net'
+#MONGO_DB_URI = f"mongodb+srv://{MONGO_DB_USER}:{MONGO_DB_PASSWORD}@{MONGO_DB_CLUSTER}/{MONGO_DB_NAME}?retryWrites=true&w=majority&appName=NebulaSource"
 
-client = MongoClient(MONGO_DB_URI)
-db = client[MONGO_DB_NAME]
+#client = MongoClient(MONGO_DB_URI)
+#db = client[MONGO_DB_NAME]
 
 
 
