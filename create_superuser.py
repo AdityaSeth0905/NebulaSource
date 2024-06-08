@@ -10,8 +10,8 @@ db = client['NebulaSourceDB']
 # Define superuser credentials
 superuser = {
     "username": "admin",
-    "email": "admin@example.com",
-    "password": generate_password_hash("adminpassword"),  # Hash the password
+    "email": "adityaseth936@gmail.com",
+    "password": generate_password_hash("8882187203"),  # Hash the password
     "is_superuser": True,
     "is_staff": True
 }
